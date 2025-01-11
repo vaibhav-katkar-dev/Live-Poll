@@ -61,29 +61,35 @@ This project is a full-stack web application for creating, managing, and interac
     npm init -y
     npm install express ejs mongoose 
     npm install socket.io
+    node app.js
     ```
 
     ## Usage
 
 1. **Access the Dashboard**:
+  
    - View all created polls in one place.
    - Monitor real-time voting and viewing activity.
 
-2. **Create a New Poll**:
+3. **Create a New Poll**:
+
    - Use the "Create Poll" feature to set up a new poll.
    - Enter the following:
      - Poll Name
      - Poll Question
      - Add unlimited options for voting.
 
-3. **Vote on a Poll**:
+5. **Vote on a Poll**:
+   
    - Open any poll and vote on the options.
    - Real-time voting results and statistics will be updated automatically.
 
-4. **Manage Polls**:
+7. **Manage Polls**:
+   
    - Use the dashboard to delete polls you no longer need.
 
-5. **Utilize the Feedback System**:
+9. **Utilize the Feedback System**:
+  
    - Write your feedback in the provided form.
    - Submit the feedback, which will be displayed dynamically on the same page with an interactive and engaging design.
 
@@ -95,19 +101,32 @@ Include screenshots to illustrate key features of the application:
 
 1. **Dashboard View**:
 
-<!-- ![Dashboard View](path/to/dashboard-screenshot.png) -->
+ ![Poll Dashboard](https://github.com/vaibhav-katkar-dev/Live-Poll/blob/main/public/assets/dash.PNG)
+![Poll Dashboard](https://github.com/vaibhav-katkar-dev/Live-Poll/blob/main/public/assets/dash2.PNG)
 
    - Overview of all created polls.
    - Key details such as poll names, view count, and voting statistics.
 
 2. **Poll Creation Page**:
+  ![Poll Dashboard](https://github.com/vaibhav-katkar-dev/Live-Poll/blob/main/public/assets/create.PNG)
+  ![Poll Dashboard](https://github.com/vaibhav-katkar-dev/Live-Poll/blob/main/public/assets/create2.PNG)
+  ![Poll Dashboard](https://github.com/vaibhav-katkar-dev/Live-Poll/blob/main/public/assets/creat3.PNG)
+
    - Interface for creating a new poll.
    - Fields for poll name, question, and options.
 
-3. **Real-Time Poll Statistics**:
-   - Real-time updates for voting results using Socket.IO.
-   - Graphical or numerical representation of votes.
+4. **Real-Time Poll Statistics**:
+    ![Poll Dashboard](https://github.com/vaibhav-katkar-dev/Live-Poll/blob/main/public/assets/vote.PNG)
+    ![Poll Dashboard](https://github.com/vaibhav-katkar-dev/Live-Poll/blob/main/public/assets/dash.PNG)
+  
 
-4. **Interactive Feedback Page**:
+   - Real-time updates for voting results using Socket.IO.
+   
+
+6. **Interactive Feedback Page**:
+
+    ![Poll Dashboard](https://github.com/vaibhav-katkar-dev/Live-Poll/blob/main/public/assets/feedback.PNG)
+    ![Poll Dashboard](https://github.com/vaibhav-katkar-dev/Live-Poll/blob/main/public/assets/feedback2.PNG)
+
    - Engaging form for submitting feedback.
    - Feedback displayed dynamically on the same page with an eye-catching design.
