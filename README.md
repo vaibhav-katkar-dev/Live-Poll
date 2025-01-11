@@ -110,7 +110,7 @@ Include screenshots to illustrate key features of the application:
 2. **Poll Creation Page**:
   ![Poll Dashboard](https://github.com/vaibhav-katkar-dev/Live-Poll/blob/main/public/assets/create.PNG)
   ![Poll Dashboard](https://github.com/vaibhav-katkar-dev/Live-Poll/blob/main/public/assets/create2.PNG)
-  ![Poll Dashboard](https://github.com/vaibhav-katkar-dev/Live-Poll/blob/main/public/assets/creat3.PNG)
+  ![Poll Dashboard](https://github.com/vaibhav-katkar-dev/Live-Poll/blob/main/public/assets/create3.PNG)
 
    - Interface for creating a new poll.
    - Fields for poll name, question, and options.
