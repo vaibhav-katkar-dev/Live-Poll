@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.home1 {
+    height: 110vh;
+    width: 100vw;
+    background-color: rgb(25, 16, 68);
+    display: block;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.home2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.home2-left {
+    min-height: 70vh;
+    width: 65vw;
+    background-color: rgb(216, 216, 216);
+    position: absolute;
+    transform: translate(20%, 10%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    overflow-wrap: break-word;
+}
+
+.home2-left h2, p, b, li {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+
+.nav {
+    padding-top: 10px;
+    padding-right: 10px;
+    width: 100vw;
+    height: 10vh;
+    background-color: #E0E0E0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav div a {
+    margin: 10px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav div a:hover {
+    background-color: rgb(32, 2, 114);
+    color: white;
+    border-radius: 5px;
+    transition-delay: 0.5s ease-out;
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.nav div {
+    padding: 15px;
+}
+
+.poolContainer {
+    min-height: 70vh;
+    width: 70vw;
+    background-color: rgb(88, 88, 88);
+    position: absolute;
+    transform: translate(20%, 10%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow-wrap: break-word;
+}
+
+#welcome {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    font-size: 10vh;
+    margin: 20px;
+    font-weight: 900;
+    position: absolute; /* Ensure absolute positioning */
+    -webkit-text-stroke: 2px rgb(22, 8, 0);
+    color: transparent;
+    z-index: 10; /* Ensure the text stays above other elements */
+    text-align: center;
+    width: 100%; /* Make sure it's centered */
+}
+
+
+#viral {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+#pool {
+    font-style: italic;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.nav #logo {
+    padding: 5px;
+    height: 40px;
+    margin: 0 10vh;
+    overflow: visible;
+}
+
+#createPoll {
+    background-color: rgb(59, 74, 209);
+    padding: 10px;
+    height: fit-content;
+    width: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    top: 70%;
+    left: 15%;
+    position: absolute;
+}
+
+#createPoll:hover {
+    background-color: rgb(38, 43, 90);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+#logo_image {
+    height: 50px;
+    width: 50px;
+    padding: 4px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: relative;
+    top: -9px;
+    border: 2px solid rgb(255, 136, 0);
+}
+
+@keyframes floatSlowly {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Move the image up */
+    }
+    100% {
+        transform: translateY(0); /* Return to its original position */
+    }
+}
+
+.poolContainer img {
+    height: 60vh;
+    width: auto;
+    margin-top: 5vh;
+    margin-left: 15vh;
+    animation: floatSlowly 5s ease-in-out infinite; /* Apply animation */
+}
+
+
+/* General Styles for Sections */
+section {
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgb(240, 240, 255);
+}
+
+/* Features Section */
+.home2-left {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home2-left h2 {
+    color: rgb(25, 16, 68);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.home2-left ul {
+    list-style: none;
+    padding: 0;
+    color: rgb(60, 60, 60);
+    line-height: 1.8;
+}
+
+.home2-left ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.home2-left ul li b {
+    color: rgb(59, 74, 209);
+}
+
+/* How It Works Section */
+.how-it-works {
+    text-align: center;
+    background-color: rgb(245, 245, 255);
+}
+
+.how-it-works h2 {
+    font-size: 2rem;
+    color: rgb(25, 16, 68);
+    margin-bottom: 15px;
+}
+
+.how-it-works ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 60%;
+    color: rgb(60, 60, 60);
+    line-height: 1.8;
+}
+
+.how-it-works ol li {
+    margin: 10px 0;
+}
+
+/* Trending Polls Section */
+.trending-polls {
+    text-align: center;
+    background-color: rgb(255, 255, 240);
+}
+
+.trending-polls h2 {
+    font-size: 2rem;
+    color: rgb(25, 16, 68);
+    margin-bottom: 15px;
+}
+
+.trending-polls ul {
+    list-style-type: square;
+    padding-left: 20px;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 60%;
+    color: rgb(60, 60, 60);
+    line-height: 1.8;
+}
+
+.trending-polls ul li {
+    margin: 10px 0;
+}
+
+.trending-polls ul li b {
+    color: rgb(59, 74, 209);
+    font-weight: bold;
+}
+
+.trending-polls .view-all {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: rgb(59, 74, 209);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.trending-polls .view-all:hover {
+    background-color: rgb(38, 43, 90);
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: rgb(245, 245, 255);
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    color: rgb(25, 16, 68);
+    margin-bottom: 15px;
+}
+
+.testimonials blockquote {
+    font-size: 1.2rem;
+    color: rgb(60, 60, 60);
+    font-style: italic;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+/* Contact Us Section */
+.contact-us {
+    text-align: center;
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    border-radius: 0px;
+    margin: 0;
+}
+
+.contact-us h2 {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+}
+
+.contact-us ul {
+    list-style: none;
+    padding: 0;
+    color: rgb(190, 190, 190);
+    line-height: 1.8;
+}
+
+.contact-us ul li {
+    margin: 10px 0;
+}
+
+.contact-us a {
+    color: rgb(59, 74, 209);
+    text-decoration: none;
+}
+
+.contact-us a:hover {
+    text-decoration: underline;
+}
+
+.contact-us p {
+    color: #E0E0E0;
+}
+
+/* Footer */
+.footer-copy {
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgb(100, 100, 100);
+    margin: 20px 0;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PollsApp - Create and Manage Polls</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="/css/blog.css">
+</head>
+<body>
+    <%- include("include/nav.ejs") %>
+    <header>
+        <h1>Welcome to Poll Maker - Your Polling Solution!</h1>
+    </header>
+    
+    <article>
+        <h2>About Poll Maker</h2>
+        <p>
+           Pool Maker is an online platform that allows users to create and manage their own polls effortlessly.
+            WithPool Maker, you can create unlimited polls and options, track real-time votes, and delete polls as needed from your personal dashboard.
+        </p>
+
+        <h2>Features</h2>
+        <p>Here are the main features ofPool Maker:</p>
+        <ul>
+            <li>
+                <strong>Create Polls:</strong> Users can create polls by entering a poll name, question, and unlimited options.
+            </li>
+            <li>
+                <strong>Manage Polls:</strong> After creation, users can access their polls from the dashboard where they can view details, including the number of views and clicks per option in real-time using Socket.IO.
+            </li>
+            <li>
+                <strong>Real-Time Voting:</strong> Poll responses and statistics are updated live, and users can observe voting activity instantly.
+            </li>
+            <li>
+                <strong>Delete Polls:</strong> Users can delete any poll they no longer want from the dashboard.
+            </li>
+            <li>
+                <strong>Interactive Dashboard:</strong> In the dashboard, you can view all created polls, including their view counts and the number of responses.
+            </li>
+        </ul>
+
+        <h2>How To Create a Poll</h2>
+        <p>
+            Creating a poll is simple. Follow these steps:
+        </p>
+        <ol>
+            <li>Enter the name of the poll.</li>
+            <li>Add your poll question.</li>
+            <li>Provide multiple options (unlimited) for users to vote on.</li>
+            <li>Click the "Create Poll" button, and your poll will go live.</li>
+            <li>The poll will be displayed on the dashboard, where you can manage views, stats, and delete it if necessary.</li>
+        </ol>
+
+        <h2>Polling in Action</h2>
+        <p>
+            Once your poll is live, users can click on it and vote. The poll page displays:
+        </p>
+        <ul>
+            <li>
+                A list of all options created for the poll.
+            </li>
+            <li>
+                A counter showing how many people voted for each option.
+            </li>
+            <li>
+                A real-time update of votes and view counts powered by Socket.IO.
+            </li>
+        </ul>
+
+        <h2>Your Dashboard</h2>
+        <p>
+            Your Polls Dashboard gives you complete control. In the dashboard, you can:
+        </p>
+        <ul>
+            <li>View a list of all created polls.</li>
+            <li>See detailed statistics for each poll, such as total views and votes for each option.</li>
+            <li>Delete any unwanted polls directly from the dashboard.</li>
+        </ul>
+
+        <h2>Interactive Features</h2>
+        <p>
+            ThePool Maker allows for live polling and management:
+        </p>
+        <ul>
+            <li>
+                <strong>Real-Time Updates:</strong> Poll responses are updated live for all participants to see. Socket.IO enables smooth and fast data transmission.
+            </li>
+            <li>
+                <strong>Responsive Design:</strong> The platform is fully responsive, ensuring a seamless user experience across various devices (desktop, tablet, and mobile).
+            </li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>
+           Pool Maker is the ultimate solution for anyone looking to create polls for events, feedback, opinions, or surveys. It's easy to use, highly interactive, and provides you with powerful tools to manage and view your polls.
+        </p>
+        <p>Start creating your first poll now and see the engagement rise in real-time!</p>
+
+    </article>
+    
+    <footer>
+        <p>&copy; 2025Pool Maker. All rights reserved.</p>
+    </footer>
+</body>
+</html>

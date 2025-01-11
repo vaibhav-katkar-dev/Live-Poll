@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="/css/createPoll.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <%-include("include/nav.ejs")%>
+
+    <div class="body">
+
+
+        <div class="left">
+
+            <div class="left-top">
+                <div>
+                <input id="name" type="text" placeholder="Create Unique Name" />
+            </div>
+                <div>
+                <input id="quetion" type="text" placeholder="Enter quetion" />
+            </div>
+                <div>
+                    <input id="count" type="text" value="" placeholder="Enter new option"></input>
+                </div>
+                <a href="#" id="create">Create</a>
+            </div>
+
+            <div class="left-down">
+                <!-- 
+                <div id="option">
+                    <input type="radio"  name="yes" class="l_d_option">
+                    <p>India</p>
+                </div> -->
+
+
+
+            </div>
+            <div class="fb">
+                <a href="#" id="final">Final</a>
+            </div>
+
+
+        </div>
+
+
+        <div class="right">
+            
+
+            <div class="main">
+
+                <div class="quetion">
+                    <h4 id="ceatedQuetion">Quetion/Query</h4>
+
+                </div>
+                <div class="option_r">
+                    <!-- <div class="in_option">
+                        
+                         <input type="radio" name="yes" class="r_redio">
+                         <p>Option 1</p>
+                    </div> -->
+
+
+                </div>
+
+
+            </div>
+
+            <div>
+
+                <a href="/dashboard" id="shere"><i class="fa-solid fa-share-from-square"></i></a>
+               
+            </div>
+           
+        </div>
+
+        <script src="/js/createPoll.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            const socket = io();
+
+            // console.log(arr);
+
+            socket.on('test', (a) => {
+                // console.log('on',a)F
+            })
+
+
+
+            socket.on('recivedArray', (data) => {
+
+
+            })
+
+
+
+
+
+
+
+        </script>
+        </div>
+        <%- include("include/foot.ejs") %>
+</body>
+
+</html>

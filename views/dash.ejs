@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="/css/dash.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+<body>
+    <%-include("include/nav.ejs")%>
+
+
+    <!-- <div class="nav">
+        <div id="logo"><span id="viral">viraL</span><span id="pool">Pool</span></div>
+        <div><a id="ahome" href="#">Home</a><a id="ashboard" href="dashboard">Dashboard</a><a href="">Forums</a><a href="">Contact</a><a href="">Login</a></div>
+    </div> -->
+    <div class="body">
+        
+       
+
+        <div class="main">
+            <div id="totalPools"><i class="fa-solid fa-rectangle-list"></i>4</div>
+            <div id="views"><i class="fa-solid fa-eye"></i> <%=count%></div>
+            <div id="responce"><a href="http://localhost:3000/create"><i class="fa-solid fa-plus"></i></a></div>
+           
+        </div>
+        <div class="poolList">
+            
+            <!-- <div class="pools">
+                <a href="#">name of pool</a>
+                <p><i class="fa-solid fa-eye"></i>h</p>
+                <div class="edit_delete">
+                <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href="#"><i class="fa-solid fa-trash"></i></a>
+                </div>
+            </div> -->
+
+
+        </div>
+
+        
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/dash.js"></script>
+    <%- include("include/foot.ejs") %>
+</body>
+</html>

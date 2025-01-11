@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    border: 0;
+}
+
+.body{
+    height: 100%;
+    width: 100vw;
+    background-color: rgb(0, 1, 77);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding: 15px 20vh;
+
+}
+.Msg{
+    height: auto;
+    overflow-y: visible;
+    width:70vw;
+    background-color: rgb(53, 57, 73);
+    position: relative;
+    border-radius: 5px;
+    padding: 05vh 10vh;
+    margin: 5px;
+}
+.Msg p{
+    color: white;
+
+    font-style: italic;
+}
+
+.createMsg{
+    height: 40vh;
+    width: 
+    50vw;
+    position: relative;
+    
+    background-color:invisible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10vh 20vw;
+    display: flex;flex-direction: column;
+    justify-content: center;
+}
+#iname{
+    width: 
+    40vw;
+    height: 
+    50px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+    font-size: 15px;
+
+}
+#ifeedback{
+    width: 
+    40vw;
+    height: 
+    50vh;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    
+    font-size: 15px;
+
+}
+button{
+    height: 70px;
+    width:80px;
+    padding: 10px;
+    font-size: 15px
+;
+    background-color: rgb(255, 94, 0);
+    color: white;
+    margin: 10px;
+    border: 0px;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+   left: 40vh;
+   position: relative;
+
+}

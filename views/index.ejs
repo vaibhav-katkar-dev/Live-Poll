@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pool Maker</title>
+</head>
+<body>
+    <header class="home1">
+        <%- include("include/nav.ejs") %>
+        <section class="poolContainer">
+            <p id="welcome">Welcome to Pool Maker</p>
+            <img src="/assets/Poll (2).png" alt="Polling Illustration" class="home-image">
+            <a href="/create" id="createPoll">Create Poll</a>
+        </section>
+    </header>
+    
+    <main>
+        <section class="home2">
+            <div class="home2-left">
+                <h2>Features Highlight</h2>
+                <p>Pool Maker provides an all-in-one solution for polling needs. Here’s what makes it stand out:</p>
+                <ul>
+                    <li><b>Real-Time View Count:</b> Monitor live updates on how many users are engaging with your polls.</li>
+                    <li><b>Create Custom Polls:</b> Personalize polls to suit any topic or need, adding as many options as desired.</li>
+                    <li><b>Open and Public:</b> Create polls that everyone can participate in without signing up.</li>
+                    <li><b>Share and Circulate:</b> Share polls seamlessly across platforms to expand visibility.</li>
+                    <li><b>Analyze Results:</b> Dive into insightful analytics showing responses, clicked options, and trends.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <ol>
+                <li>Create a Poll in Seconds: Use our simple interface to add questions and options.</li>
+                <li>Share the Link: Share your poll with your audience through social media or direct links.</li>
+                <li>Get Real-Time Feedback: Watch as votes and views update instantly.</li>
+                <li>Analyze Results: View insights into engagement, responses, and poll statistics.</li>
+            </ol>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Users Are Saying</h2>
+            <blockquote>"Pool Maker revolutionized the way I gather feedback for projects. Highly recommended!" – Jane Doe</blockquote>
+            <blockquote>"Creating polls is so simple and the real-time analytics are fantastic." – John Smith</blockquote>
+            <blockquote>"A platform that makes polling open and public—love it!" – Emily Green</blockquote>
+        </section>
+    </main>
+
+    <%- include("include/foot.ejs") %>
+</body>
+</html>

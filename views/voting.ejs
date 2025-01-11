@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/voting.css">
+</head>
+<body>
+    <%-include("include/nav.ejs")%>
+<div class="body">
+
+    <div class="option">
+
+
+        <div class="details">
+            <% for (i of allData) { %>
+                <% for (j of i.option) { %>
+                    
+            <p> <span> <%=j%> </span>Got <span><%= selectedOptionsCount[j] %></span> Clicks..</p>
+            <% } %>
+            <% } %>
+        </div>
+        <% for (i of allData) { %>
+            <% for (j of i.option) { %>
+                
+              
+            
+            <div class="info">
+                 <p> <%= selectedOptionsCount[j] %><br>   <%=j%></p>
+            </div>
+            <% } %>
+        <% } %>
+    </div>
+</div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/voting.js"></script>
+    <%- include("include/foot.ejs") %>
+</body>
+</html>

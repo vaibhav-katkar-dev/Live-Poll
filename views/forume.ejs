@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/forume.css">
+</head>
+<body>
+    <%- include("include/nav.ejs") %>
+    <div class="body">
+   
+   
+    
+    <%for(d of data){%>
+    <div class="Msg">
+
+        <p><%=d.name%></p>
+        <p><%=d.msg%></p>
+        
+        <br><hr>
+    </div>
+    <%}%>
+    <div class="createMsg">
+        
+        <input type="text" id="iname" placeholder="Enter You Name" required/>
+        <textarea name="Feedback" id="ifeedback" placeholder="Write Your Feedback" required></textarea>
+        <button>Submit</button>
+    </div>
+</div>
+    
+    <%- include("include/foot.ejs") %>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        socket=io();
+        let name=document.querySelector('input');
+        let feedback=document.querySelector('textarea');
+        let Submit=document.querySelector('button');
+        Submit.addEventListener('click',(a)=>{
+          let newName=name.value;
+          let newFeedback=feedback.value
+          socket.emit("feedback",{newName,newFeedback});
+        })
+        socket.on('res',(ok)=>{
+            document.location.href="/feedback";
+        })
+    </script>
+</body>
+</html>

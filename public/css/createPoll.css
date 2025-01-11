@@ -1,0 +1,228 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: rgb(1, 10, 87);
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+
+}
+.left{
+    width: 30vw;
+    height: 90vh;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.right{
+    overflow-y: scroll;
+    width: 50vw;
+    border-radius: 10px;
+
+    background-color: white;
+    height: 90vh;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+    justify-content: center;
+}
+.left-top{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+}
+.left-down{
+    height: 40vh;
+    max-height: fit-content;
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    overflow-y: scroll;
+    
+
+    /* justify-content: centers; */
+    
+}
+
+
+#quetion,#name{
+margin: 
+10px;
+width:20vw;
+height: 5vh;
+padding-left: 10px;
+border: 0px;
+border-bottom: 2px solid rgb(38, 41, 168);
+
+}
+#quetion:hover{
+border: 2px solid rgb(38, 41, 168);
+border-radius: 5px;
+background-color: rgb(255, 250, 245);
+}
+
+#name:hover{
+   border: 2px solid rgb(38, 41, 168);
+   border-radius: 5px;
+   background-color: rgb(255, 250, 245);
+   }
+
+#count{
+margin: 
+10px;
+width:20vw;
+height: 5vh;
+padding-left: 10px;
+border: 0px;
+border-bottom: 2px solid rgb(38, 41, 168);
+}
+#count:hover{
+background-color: rgb(255, 250, 245);
+
+border: 2px solid rgb(38, 41, 168);
+border-radius: 5px;
+}
+#create{
+background-color: rgb(38, 41, 168);
+padding: 10px;
+text-align: center;
+text-decoration: none;
+font-size: 15px;
+width: fit-content;
+margin: 10px;
+color: white;
+border-radius: 5px;
+}
+#create:hover{
+background-color: rgb(43, 59, 202);
+}
+#shere i{
+   
+  
+   padding: 10px 0;
+   /* font-size: 5vh; */
+   text-align: right;
+   text-decoration: none;
+   font-size: 15px;
+ 
+   margin-top: 5px;
+   position: absolute;
+   color: rgb(0, 0, 0);
+   border-radius: 5px;
+}
+
+#final{
+   
+background-color: rgb(255, 166, 0);
+padding: 10px;
+left: 10vh;
+text-decoration: none;
+font-size: 15px;
+width: 20vh;
+text-align: center;
+color: white;
+border-radius: 5px;
+}
+.fb{
+   display: flex;
+   flex-direction: row;
+   justify-content: center
+   ;
+   padding: 20px
+   
+}
+.data p{
+    margin: 20px;
+
+ }
+ input{
+    height: 20px;
+    width: 20px;
+    margin: 15px;
+ }
+ #option{
+    
+    display: flex;
+    padding: 5px;
+    border-radius: 10px;
+    
+    flex-direction:row;
+    /* justify-content:center; */
+    margin: 5px;
+    background-color: rgb(230, 230, 230);
+    width: 20vw;
+    overflow:visible;
+ }
+
+ /* #option{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+} */
+
+
+.main{
+   height: 30vh;
+   height:fit-content;
+   padding: 10px;
+    width: 35vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center;
+
+ }
+
+ .quetion{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+ }
+ .quetion h4{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+ }
+ .option_r {
+    display: flex;
+    padding: 20px;
+    
+    flex-direction:column;
+    justify-content:center;
+    margin: 5px;
+    width: 30vw;
+   
+ }
+ input{
+    height: 20px;
+    width: 20px;
+    margin: 15px;
+ }
+ .option_r div{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px;
+    margin: 10px;
+ }
